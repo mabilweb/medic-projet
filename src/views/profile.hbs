@@ -1,0 +1,46 @@
+
+<style>
+    .cero{ width: 100%;background-image: url('/neuro1.jpg');  }
+    .uno{  margin-left: 5vmax;}
+    .btn{background: #ffbb33; width: 100%; height: 10vmin; border-radius: 10px; cursor: pointer;}
+    .btn1{ background: #ffbb33; width: 20%; height: 10vmin; border-radius: 10px; cursor: pointer;}
+
+    .dos{ margin-top: 50px;}
+    
+    .tres{font-family: Cambria;font-size: 28px; text-decoration: none;}
+
+    .btn:hover{background: #c49d50;}
+    .btn:hover a{color: antiquewhite;}
+
+     .btn1:hover{background: #c49d50;}
+    .btn1:hover a{color: antiquewhite;}
+
+    .titulo{ font-family: Cambria; font-size: 50px;color: #002966;}
+    .separar{ height: 40px;width: 10px;}
+    .separar1{ height: 300px;  width: 10px; }
+
+    .wraper{display: grid;grid-template-columns: 1fr 1fr;}
+    .elemen1{width: 50%;justify-self: end;margin-right: 2%;}
+    .elemen2{width: 50%; justify-self: start;margin-left: 2%;}
+   
+</style>
+
+
+<div class="cero">
+    <div class="separar"></div>
+    <div class="uno"><h1 class="titulo" >Bienvenido Dr. {{user.fullname}}</h1></div>
+    <div class="separar"></div>
+<div class="wraper">
+         <div class="elemen1"><button class="btn"><a href="/links" class="tres">Ve tus pacientes</a></button> </div> 
+         <div class="elemen2"><button class="btn"><a href="/links/add" class="tres">Crea un paciente nuevo</a></button> </div> 
+</div>
+   
+    <center class="dos">
+        <button class="btn1"><a href="/logout" class="tres">Salir</a></button> 
+    </center>
+        
+    <div class="separar1"></div>
+</div>
+
+
+

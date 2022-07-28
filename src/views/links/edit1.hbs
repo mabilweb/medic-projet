@@ -1,0 +1,519 @@
+ <style>
+    body{margin: 0%; font-family:cambria;}
+.cero{display:flex;background: green;}
+.dos{display: grid; background: rgb(221, 55, 55); grid-template-columns: 100%;width: 100%;}
+.uno{background: #0099cc;width: 6.5%;}
+.size1{width: 50%;padding: 25%;}
+.size2{width: 100%;}
+.size1:hover{border-radius: 50%;background: #e6e6ff;}
+.tres{height: auto;background: #0099cc;border: none;margin-left: 26.5%;width: 75%;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);}
+.cuatro{ background: #ccffcc;height: auto;width: 25%;position: fixed;margin-left: 6%;z-index: 0;}
+.sise .tooltiptext {visibility: hidden;width:auto; background-color: #0099cc;color: rgb(27, 22, 22);
+border-radius: 6px; padding: 1px 0;
+/* Position the tooltip */position: absolute;}
+.sise:hover .tooltiptext {visibility: visible;z-index: 1;}
+.tablink1 {background-color: #ccffcc;color: rgb(36, 31, 31);border: none;cursor: pointer;
+  padding: 10px 16px;font-size: 17px;width: 50%;float: left;margin-top: 1%;}
+.tablink1:hover { background-color: #bde8c4;}
+.tablink {background-color: #555;color: white;float: left;border: none;outline: none;cursor: pointer;
+  padding: 14px 16px;font-size: 17px;width: 25%;}
+.tablink:hover {background-color: #777;}
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {color: black;display: none;padding: 100px 20px;height: auto;}
+.tabcontent1{color: black;display: none;height: auto;box-sizing: border-box;}
+button{position: relative;}
+#loco::after{content: "";position: absolute;background-color: red;height: 3px;left: 0; bottom: -3px; width: 100%;}
+
+#loco1::after{content: "";position: absolute;background-color: red;height: 3px;
+        width: 0%;left: 0; bottom: -3px;}
+#Home {background-color: #f2f2f2;}#News {background-color: #f2f2f2;}#Contact {background-color: #f2f2f2;}
+#About {background-color: #f2f2f2;}
+#resumen {background-color: #ccffcc;}
+#historial {background-color: #ccffcc;}
+
+.consulta{width: 80%;background-color: #ff9933;padding: 10px 24px;cursor: pointer;border-radius: 
+    10px;border: none; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);}
+
+.consulta:hover{background: rgb(212, 135, 71);}
+
+#overflowTest {box-sizing: border-box;background: #ccffcc;color: black;padding: 1px;
+  width: 100%;height: 400px;overflow: scroll;border: 1px solid #ccc;}
+#overflowTest div{ margin-left: 10px;}
+.ante{width: 95%;height: auto;}
+.ante1{background: #ffd9b3;border-radius: 3px; padding: 2%;}
+.ante2{float:right;margin-left: 0%;margin-right: 65%;margin-top: 15px;}
+
+.collapsible {background-color: #777;margin-top: 2%;color: white; cursor: pointer; padding: 18px;width: 100%;border: none;
+  text-align: left;outline: none;font-size: 15px;border-radius: 3px;box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);}
+.active, .collapsible:hover {background-color: #555;}
+.content {padding-left: 20px; display: none; overflow: hidden;background-color: #ffd9b3;border-radius: 3px;}
+.co{display: grid;grid-template-columns: 97% 3%;}
+.btnx{ width: 100%;height:min-content;padding: 10%;
+cursor: pointer;margin-top: 10%;background:#ffd9b3 ;border: none;opacity: 0.5;}
+.btnx:hover{opacity: 1;}
+.btny{ width: 100%;height:min-content;cursor: pointer;margin-top: 10%;background:#ffd9b3 ;border: none;}
+.ante3{ width: 4%;height:4%;margin-left: 2%;}
+.over{margin-left: 0%;margin-right: 0%;grid-column: 1/3;border-bottom: 2px solid #ccc;border-top: 2px solid #ccc; }
+.ocul{display: none;}
+.notas{ grid-column: 1/2;}
+.delete{width: 20px;display: none; }
+#delete1{ display: block;width: 20px;}
+.fless{padding: 3px;display: flex; width: 80%;}
+#padre{display: block;}
+.noti{margin-right:30px;margin-bottom: 10px;}
+
+.dropup-content {display: none;position: absolute;background-color: #f1f1f1;min-width: 130px;bottom: 50px;
+  z-index: 1;}
+
+.dropup-content a {color: black;padding: 12px 16px; text-decoration: none; display: block;}
+
+.dropup-content a:hover {background-color: #ccc}
+#sise1:hover .dropup-content {display: block;}
+
+   </style>
+   <div class="cero">
+        <div class="uno">
+            <div style="height:auto;background: #0099cc;width: 6%;position:fixed">
+                <a href="/profile" class="sise">
+                    <img src="/home.svg" alt="menu icon" class="size1">
+                        <span class="tooltiptext">Home</span>
+                    </a>
+                    <a href="#" class="sise">
+                        <img src="/calendar.svg" alt="menu icon" class="size1">
+                        <span class="tooltiptext">calendario</span>
+                    </a>
+                    <a href="/links" class="sise">
+                        <img src="/id.svg" alt="menu icon" class="size1">
+                        <span class="tooltiptext">pacientes</span>
+                    </a>
+                    <a href="/logout" class="sise" id="puede">
+                        <img src="/doctor-alt.svg" alt="menu icon" class="size1">
+                        <span class="tooltiptext">Logout</span>
+                    </a>
+                    <a href="">Doctor</a>
+            </div>
+        </div>
+
+          <div class="cuatro" >
+                <div style="display: grid; grid-template-columns: 25% 70%;" >
+                    <div style="width: 100%;box-sizing: border-box; padding: 12%;">
+                        <img src="/doctor-alt.svg" alt="menu icon" style="width: 100%;border-radius: 50%;background: rgb(0, 153, 255);">
+                    </div>
+                        
+                    <div>
+                        <h1>{{link.Nombre}}</h1>
+                        <input class="ocul" type="text" id="born" value="{{link.Edad}}">
+                        <p id="edad"></p>
+                    </div>
+                </div>
+                <center style="margin-bottom: 3%;">
+    <button class="consulta">
+        CREAR CONSULTA NUEVA
+    </button>
+    </center>
+     <div>
+        <button class="tablink1" onclick="openPage1('resumen', this, '#ccffcc','resu')" id="resu">Resumen</button>
+        <button class="tablink1" onclick="openPage1('historial', this, '#ccffcc','histo')" id="histo">Historial de citas</button>
+    </div>
+
+    <div id="resumen" class="tabcontent1">
+        <div id="overflowTest">
+            <div style="width: 100%;display: grid;grid-template-columns: 1fr 1fr;">
+              <div style="display: flex;"><p>Peso:</p><p   style="margin-left: 10px;">64kg</p></div>
+              <div style="display: flex;"><p>Altura:</p><p style="margin-left: 10px;">1.62m</p></div>
+              <h1 style="grid-column: 1/3;">Signos vitales</h1>
+              <div><p>PA:</p><p>T:</p><p>SpO2:</p></div>
+              <div><p>FC:</p><p>FR:</p></div>
+            </div>
+
+            <div class="over">
+              <h1>Antecedentes patologicos</h1>
+            </div>
+            <div class="over">
+              <h1>Alergias</h1>
+            </div>
+            </div>
+    </div>
+
+    <div id="historial" class="tabcontent1">
+      <h3>Antecedentes</h3>
+      <p>En desarrollo</p> 
+    </div>
+            </div>
+      
+        <div class="dos">
+            <div class="tres" >
+    <div style="position: fixed;width: 62%;z-index: 1000;">
+<button class="tablink" onclick="openPage('Home', this, 'green','uno')" id="uno">Ficha basica</button>
+<button class="tablink" onclick="openPage('News', this, 'green','dos')" id="dos">Antecedentes</button>
+<button class="tablink" onclick="openPage('Contact', this, 'green','tres')" id="tres">Examen</button>
+<button class="tablink" onclick="openPage('About', this, 'green','cuatro')" id="cuatro">Diagnostico y Tratamiento</button>
+
+</div>
+<div id="Home" class="tabcontent"><!-- pestaña de Ficha basica-->
+ <div class="ante">
+ <div class="ante1">
+  
+  <aside class="ante2">No:{{link.ID_paciente}}</aside>
+  <h1 style="margin-bottom: 0px;">{{link.Nombre}}</h1><h1>{{link.Apellido}}</h1>
+  
+  <div style="display: flex;">
+    <img src="/pastel.svg" alt="menu icon" class="ante3" >
+    <h1 style="margin-top: 0%;"> Cumple:{{link.Edad}}</h1>
+  </div>
+  <h1>Datos de contacto</h1>
+  <div style="display: flex;">
+    <img src="/cell.svg" alt="menu icon" class="ante3" >
+    <h1 style="margin-top: 0%;margin-left: 1%;" >{{link.Tel}}</h1>
+    <img src="/email.svg" alt="menu icon" class="ante3" style="margin-left: 30%;" >
+    <h1 style="margin-top: 0%;margin-left: 1%;"  >{{link.Email}}</h1>
+  </div>
+ </div>
+ <button type="button" class="collapsible" >Notas privadas</button>
+<div class="content">
+<form action="/links/edito" method="post">
+  <div class="co" >
+<p>No se comparten con otro usuario</p>
+<button class="btnx" id="notas"  ><img src="/save.svg" alt="menu icon" style="width:100%;height: 100%;"></button> 
+<div class="notas"><div  id="padre"></div></div></div>
+  <textarea name="data1" id ="data" cols="100" rows="5" class="texto"></textarea>
+  <input class="ocul" type="text" id="data5" name="data2" value="{{link.ID_paciente}}">
+  <input class="ocul" type="text" id="data4" value="{{link.Notas}}" name="data3">
+</form>
+</div>
+
+<button type="button" class="collapsible">Contactos de emergencia</button>
+<div class="content">
+  <div class="co" >
+<p>numeros</p>
+<button class="btnx" >
+  <img src="/save.svg" alt="menu icon" style="width:100%;height: 100%;">
+  </button>     
+  </div>
+<textarea name="" id="" cols="100" rows="5" class="texto"> algo</textarea>
+</div>
+
+<button type="button" class="collapsible">Seguros y planes medicos</button>
+<div class="content">
+  <div class="co" >
+<p>planes</p>
+<button class="btnx" >
+  <img src="/save.svg" alt="menu icon" style="width:100%;height: 100%;">
+  </button>     
+  </div>
+<textarea name="" id="" cols="100" rows="5" class="texto"> algo</textarea>
+</div>
+ </div>
+</div>
+
+<div id="News" class="tabcontent"><!-- pestaña de Antecedentes-->
+<div class="ante">
+  <button type="button" class="collapsible">Antecedentes personales no patológicos</button>
+<div class="content">
+  <form action="/links/Antecedentes" method="post">
+  <div class="co" >
+<p>Embarazo parto posparto desarrollo psicológico biológico rasgos de la personalidad necesidades y motivaciones postración y aprendizaje esquema de vacunación hábitos alimentación comentario análisis y síntesis de los datos significativos.</p>
+<button class="btnx" >
+  <img src="/save.svg" alt="menu icon" style="width:100%;height: 100%;">
+  </button>     
+  </div>
+  <ul><li><p>{{link.Nopatologico}} </p></li></ul>
+<textarea name="nopato" id="" cols="100" rows="5" class="texto"></textarea>
+<input class="ocul" type="text" id="dat" name="num" value="{{link.ID_paciente}}">
+<input class="ocul" type="text" id="dat" name="nopato1" value="Nopatologico">
+  </form>
+  
+</div>
+ <button type="button" class="collapsible">Antecedentes personales patológicos </button>
+<div class="content">
+  <form action="/links/Antecedentes" method="post">
+  <div class="co">
+     <p>antecedentes traumáticos quirúrgicos infecciosas transfusiones alérgicos convulsivos hospitalarios adicciones entre otros</p>
+ <button  class="btnx">
+  <img src="/save.svg" alt="menu icon" style="width:100%;height: 100%;">
+  </button>
+  </div>
+   <ul><li><p>{{link.Patologico}} </p></li></ul>
+  <textarea name="nopato" id="" cols="100" rows="5" class="texto"></textarea>
+  <input class="ocul" type="text" id="dat" name="num" value="{{link.ID_paciente}}">
+<input class="ocul" type="text" id="dat" name="nopato1" value="Patologico">
+  </form>
+</div>
+<button type="button" class="collapsible">Antecedentes heredofamiliares </button>
+<div class="content">
+  <form action="/links/Antecedentes" method="post">
+  <div class="co" >
+<p>Abuelos padres hermanos hijos y colaterales.</p>
+<button class="btnx" >
+  <img src="/save.svg" alt="menu icon" style="width:100%;height: 100%;">
+  </button>     
+  </div>
+   <ul><li><p>{{link.Heredofamiliares}} </p></li></ul>
+<textarea name="nopato" id="" cols="100" rows="5" class="texto"></textarea>
+ <input class="ocul" type="text" id="dat" name="num" value="{{link.ID_paciente}}">
+<input class="ocul" type="text" id="dat" name="nopato1" value="Heredofamiliares">
+</form>
+</div>
+ <button type="button" class="collapsible">historia familiar </button>
+<div class="content">
+  <form action="/links/Antecedentes" method="post">
+ <div class="co" >
+  <p>Circunstancia familiar, social, económica, cultural. Desarrollo y tipo de estructura familiar eventos significativos comentario análisis y síntesis de los datos significativos. </p>
+<button class="btnx" >
+  <img src="/save.svg" alt="menu icon" style="width:100%;height: 100%;">
+  </button>     
+  </div>
+   <ul><li><p>{{link.Familiar}} </p></li></ul>
+<textarea name="nopato" id="" cols="100" rows="5" class="texto"></textarea>
+<input class="ocul" type="text" id="dat" name="num" value="{{link.ID_paciente}}">
+<input class="ocul" type="text" id="dat" name="nopato1" value="Familiar">
+</form>
+</div>
+ <button type="button" class="collapsible">historia escolar </button>
+<div class="content">
+  <form action="/links/Antecedentes" method="post">
+<div class="co" >
+  <p>Tendencias familiares e individuales hacia el estudio descripción del proceso del conocimiento. El medio escolar en que se desarrolla. Valores, ideales, objetivos,aspiraciones, metas.  Sus experiencias significativas comentario análisis y síntesis de los datos significativos.</p>
+<button class="btnx" >
+  <img src="/save.svg" alt="menu icon" style="width:100%;height: 100%;">
+  </button>     
+  </div>
+   <ul><li><p>{{link.Escolar}} </p></li></ul>
+  <textarea name="nopato" id="" cols="100" rows="5" class="texto"></textarea>
+  <input class="ocul" type="text" id="dat" name="num" value="{{link.ID_paciente}}">
+<input class="ocul" type="text" id="dat" name="nopato1" value="Escolar">
+  </form>
+</div>
+ <button type="button" class="collapsible">Sociocultural  </button>
+<div class="content">
+  <form action="/links/Antecedentes" method="post">
+<div class="co" >
+  <p>Descripción del proceso de conocimiento y desarrollo de la sexualidad. Actitud ante los padres de familia, la sociedad. Actitud ante la pareja, ante los hijos, la edad y la sexualidad comentario: análisis y síntesis de los datos significativos.</p>
+<button class="btnx" >
+  <img src="/save.svg" alt="menu icon" style="width:100%;height: 100%;">
+  </button>     
+  </div>
+   <ul><li><p>{{link.Sociocultural}} </p></li></ul>
+  <textarea name="nopato" id="" cols="100" rows="5" class="texto"></textarea>
+   <input class="ocul" type="text" id="dat" name="num" value="{{link.ID_paciente}}">
+<input class="ocul" type="text" id="dat" name="nopato1" value="Sociocultural">
+  </form>
+</div>
+ <button type="button" class="collapsible">Historia ocupacional</button>
+<div class="content">
+  <form action="/links/Antecedentes" method="post">
+<div class="co" >
+  <p>Actitudes familiares y personales, medio ambiente socio-económico-cultural. Descripción del proceso ocupacional. Valores, ideales, objetivos, aspiraciones, metas, sus experiencias significativas comentarios: análisis y síntesis de los datos significativos.</p>
+<button class="btnx" >
+  <img src="/save.svg" alt="menu icon" style="width:100%;height: 100%;">
+  </button>     
+  </div>
+   <ul><li><p>{{link.Ocupacional}} </p></li></ul>
+  <textarea name="nopato" id="" cols="100" rows="5" class="texto"></textarea>
+  <input class="ocul" type="text" id="dat" name="num" value="{{link.ID_paciente}}">
+<input class="ocul" type="text" id="dat" name="nopato1" value="Ocupacional">
+  </form>
+</div>
+ <button type="button" class="collapsible">Personalidad previa</button>
+<div class="content">
+  <form action="/links/Antecedentes" method="post">
+<div class="co" >
+  <p>Actitud ante la vida CONDUCTA: desde la infancia hasta el inicio del padecimiento.</p>
+<button class="btnx" >
+  <img src="/save.svg" alt="menu icon" style="width:100%;height: 100%;">
+  </button>     
+  </div>
+   <ul><li><p>{{link.Personalidad}} </p></li></ul>
+  <textarea name="nopato" id="" cols="100" rows="5" class="texto"></textarea>
+   <input class="ocul" type="text" id="dat" name="num" value="{{link.ID_paciente}}">
+<input class="ocul" type="text" id="dat" name="nopato1" value="Personalidad">
+  </form>
+</div>
+
+</div>
+</div>
+
+<div id="Contact" class="tabcontent"><!-- pestaña de Examen-->
+  <div class="ante">
+    <button type="button" class="collapsible">INTERROGATORIO POR APARATOS Y SISTEMAS</button>
+<div class="content">
+  <p>Endocrino, cardiovascular, respiratorio,digestivo,urinario,músculoesqueletico,neurológico,otros.</p>
+</div>
+ <button type="button" class="collapsible">EXPLORACION FISICA Y NEUROLOGICA</button>
+<div class="content">
+  <p>PESO______EST._________TEMP.________RESP._____TA.________</p>
+</div>
+ <button type="button" class="collapsible">EXPLORACION: </button>
+<div class="content">
+  <p>General de cabeza,cuello,torax,abdomen,extremidades.</p>
+</div>
+ <button type="button" class="collapsible">Exploración Neurológica</button>
+<div class="content">
+  <p>Estado de conciencia, afasia,apraxia,agnosia,columna vertebral, craneanos,sistema motor sensitivo,reflejos,sistema nervioso vegetativo,troficidad.</p>
+  <p>Hemisferio dominante:</p>
+</div>
+<button type="button" class="collapsible">Examen mental </button>
+<div class="content">
+  <p>Impresión general, habitus exterior, conciencia atención, concentración, comprensión, orientación; (tiempo, lugar, persona)memorias(reciente, tardía) sensopercepcion, lenguaje y pensamiento(curso y contenido) juicio(autocritica-heterocritica y conciencia de enfermedad) actitudes, talante, motricidad.</p>
+
+</div>
+  </div>
+</div>
+<div id="About" class="tabcontent" ><!-- pestaña de Diagnostico y tratamiento-->
+ <div class="ante">
+   <button type="button" class="collapsible">DIAGNOSTICO (DSM IV)</button>
+<div class="content">
+  <textarea name="" id="" cols="30" rows="10"></textarea>
+</div>
+ <button type="button" class="collapsible">PRONOSTICO</a></button>
+<div class="content">
+  <p>Especificar el estado actual del trastornó  leve, moderado, grave, asi como su posible evolución.</p>
+</div>
+<button type="button" class="collapsible">TRATAMIENTO:</button>
+<div class="content">
+  <p>Especificar medicamentos (nombre genérico, presentación, dosis, horario)
+Vía de administración, estudios de laboratorio y gabinete, signos vitales, dieta y cuidados especiales, por riesgo  de agresión, suicidio y abandono del servicio. Interconsultas, visitas, rehabilitación. 
+</p>
+</div>
+ </div>
+</div>
+            </div>
+        </div>
+    </div>
+    <script>
+      var i=0;
+      var notas1= document.getElementById("data4").value;
+      var idPcie= document.getElementById("data5").value;
+      var notas2=notas1;
+      notas1=notas1.split('&');
+      var lennotas1=notas1.length;
+
+      var reci={{link.score}};
+      var fecha=document.getElementById("born").value;
+      
+      var d = new Date();
+      d=parseInt(d.getFullYear());
+      
+      document.getElementById("edad").innerHTML=d-fecha.slice(6,10) +" "+"años";
+
+      /*var notas2=notas1.slice(0,3);para leccionar caracterres en un rango especifico*/
+      var resu= document.getElementById("data").value;
+      /*<a href=""><img src="/delete.svg" alt="menu icon" class="delete"></a>*/
+
+       class paginacion{
+            paginas(i){
+                var pagi=document.getElementById("padre");
+                var element1=document.createElement("form");
+               element1.setAttribute("class","fless");
+               element1.setAttribute("onmouseover","mOver(this)");
+               element1.setAttribute("action","/links/borro");
+               element1.setAttribute("method","post");
+                element1.innerHTML=`<div class="noti"> ${notas1[i]} </div> `;
+                pagi.appendChild(element1); 
+            }
+        }
+     function mOver(obj){
+      var inde=19;
+
+        for(i=0;obj.innerHTML.length;i++){
+        if(obj.innerHTML[19+i]=="<"){
+          break;
+        }
+        inde++;
+      }
+    var toBorrar=obj.innerHTML.slice(19,inde);
+    var Borra=toBorrar.slice(0,inde-20)+"&";
+  
+   var newword=notas2.replace(Borra,"");
+    console.log(newword);
+      
+      var basu=document.createElement("div");
+      basu.setAttribute("id","se");
+       basu.setAttribute("onmouseout","mOut(this)");
+       basu.setAttribute("onmouseout","mOut(this)");
+      basu.style.width="50px";
+      basu.style.marginLeft="-20px";
+      if(obj.children.length<2){
+        basu.innerHTML=`<button class="btny" id="notas" type="submit" ><img src="/delete.svg" alt="menu icon" id="delete1"></button> 
+        <input class="ocul" type="text" id="data4" value="${newword}" name="borrar">
+        <input class="ocul" type="text" name="data2" value="${idPcie}">`;
+      var cesta=obj.appendChild(basu);
+      }
+    
+/*console.log((obj.innerHTML).slice(19,inde));*/
+    
+    }
+     function mOut(obj){
+    var lista = document.getElementById("se");
+    lista.remove();
+    }
+    
+/*function mOut(obj){
+   var pagi2=document.getElementsByClassName("delete1");
+      pagi2.setAttribute("class","delete");
+
+}*/
+    function openPage(pageName,elmnt,color,ides) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+        tablinks[i].setAttribute('id','loco1');
+      }
+      document.getElementById(pageName).style.display = "block";
+      var cosa=elmnt.setAttribute("id","loco");
+      elmnt.style.backgroundColor = color;
+    }
+    function openPage1(pageName,elmnt,color,ides) {
+      var i, tabcontent1, tablinks1;
+      tabcontent1 = document.getElementsByClassName("tabcontent1");
+      for (i = 0; i < tabcontent1.length; i++) {
+        tabcontent1[i].style.display = "none";
+      }
+      tablinks1 = document.getElementsByClassName("tablink1");
+      for (i = 0; i < tablinks1.length; i++) {
+        tablinks1[i].style.backgroundColor = "";
+        tablinks1[i].setAttribute('id','loco1');
+      }
+      document.getElementById(pageName).style.display = "block";
+      elmnt.setAttribute("id","loco");
+      elmnt.style.backgroundColor = color;
+    }
+    // Get the element with id="defaultOpen" and click on it
+    if(reci==9){
+      document.getElementById("dos").click();
+    }
+    else{
+      if(reci==92){document.getElementById("uno").click();}
+    }
+    document.getElementById("resu").click();
+    </script>
+    <script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+ var paginass=new paginacion();
+        for(i=0;i<notas1.length;i++){
+            paginass.paginas(i);
+        }
+
+</script>
+
+
+   

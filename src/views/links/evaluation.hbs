@@ -1,0 +1,556 @@
+<style>
+
+     :root{
+            --colortexto: rgb(73, 50, 158);
+        }
+    body{
+    margin: 0%;
+}
+h1{
+    font-family: Calibri;
+    color:var(--colortexto);
+}
+.cero{
+  display: grid;grid-template-columns: 7% 93%; grid-template-rows: auto;
+  background: green;
+}
+.dos{
+   display: block; background: #ccccff;
+}
+.uno{
+  
+      background: #4db8ff;
+}
+
+.size1{
+  width: 50%;padding: 25%;
+}
+.size1:hover{
+    border-radius: 50%;background: red;
+}
+.tres{
+     position: fixed;
+    width: 100%;height: 60px;background: #cce6ff;border: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000; 
+}
+#cuatro{
+      background: #eff5f5;width: 80%;height: auto;margin-top: 10%; margin-left: 10%;
+    margin-right: 10%;border-radius: 3%;
+}
+
+.sise .tooltiptext {
+visibility: hidden;width: 120px; background-color: black;color: #fff;text-align: center;
+border-radius: 6px; padding: 5px 0;
+/* Position the tooltip */
+position: absolute;z-index: 1;
+}
+.sise:hover .tooltiptext {
+visibility: visible;
+}
+
+.btn {
+  width: 15%;
+  height: 40px;
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 16px;
+  margin-left: 75%;
+  margin-bottom: 20px;
+  text-align: center;
+  justify-items: center;
+  padding: 10px 15px;
+  
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+   </style>
+   <div class="cero">
+        <div class="uno">
+            <div style="width: 7%;height:auto;position: fixed;background: rgb(133, 144, 204);">
+                <a href="#" class="sise">
+                    <img src="/home.svg" alt="menu icon" class="size1">
+                        <span class="tooltiptext">Home</span>
+                    </a>
+                    <a href="#" class="sise">
+                        <img src="/calendar.svg" alt="menu icon" class="size1">
+                        <span class="tooltiptext">calendario</span>
+                    </a>
+                    <a href="#" class="sise">
+                        <img src="/id.svg" alt="menu icon" class="size1">
+                        <span class="tooltiptext">pacientes</span>
+                    </a>
+                    <a href="#" class="sise">
+                        <img src="/doctor-alt.svg" alt="menu icon" class="size1">
+                        <span class="tooltiptext">Doctor</span>
+                    </a>
+                <img src="/doctor-alt.svg" alt="menu icon" class="size1">
+            </div>
+        </div>
+      
+        <div class="dos">
+            <div class="tres" ><h1 style="margin-top: 1%; margin-left: 2%;">Pacientes</h1></div>
+            <div id="cuatro">
+                <div style="margin-left: 5%; margin-right:5%;">
+<h1 style="margin-top: 20px;padding-top:20px;">Inventario de Depresión de Beck </h1>
+
+<p>Instrucciones: A continuación se expresan varias respuestas posibles a cada uno de los 21 apartados. Delante de cada frase marque con una cruz el círculo que mejor refleje su situación actual.</p>
+<p>1.	Estado de ánimo</p>
+<form action="/action_page.php">
+    <input type="radio" id="a" name="ask1" value="html"> 
+    <label for="a">Esta tristeza me produce verdaderos sufrimientos</label><br>
+    <input type="radio" id="b" name="ask1" value="html"> 
+    <label for="b">No me encuentro triste</label><br>
+    <input type="radio" id="c" name="ask1" value="html"> 
+    <label for="c">Me siento algo triste y deprimido</label><br>
+    <input type="radio" id="d" name="ask1" value="html"> 
+    <label for="d">Ya no puedo soportar esta pena</label><br>
+    <input type="radio" id="e" name="ask1" value="html"> 
+    <label for="e">Tengo siempre como una pena encima que no me la puedo quitar</label><br>
+</form>
+
+<p>2.	Pesimismo</p>
+<form action="/action_page.php">
+    <input type="radio" id="a1" name="ask2" value="html"> 
+    <label for="a1">Me siento desanimado cuando pienso en el futuro</label><br>
+    <input type="radio" id="b1" name="ask2" value="html"> 
+    <label for="b1">Creo que nunca me recuperaré de mis penas</label><br>
+    <input type="radio" id="c1" name="ask2" value="html"> 
+    <label for="c1">No soy especialmente pesimista, ni creo que las cosas me vayan a ir mal</label><br>
+    <input type="radio" id="d1" name="ask2" value="html"> 
+    <label for="d1">No espero nada bueno de la vida</label><br>
+    <input type="radio" id="e1" name="ask2" value="html"> 
+    <label for="e1">No espero nada. Esto no tiene remedio</label><br>
+</form>
+
+<p>3.	Sentimientos de fracaso</p>
+<form action="/action_page.php">
+    <input type="radio" id="a2" name="ask3" value="html"> 
+    <label for="a2">He fracasado totalmente como persona (padre, madre, marido, hijo, profesional, etc.)</label><br>
+    <input type="radio" id="b2" name="ask3" value="html"> 
+    <label for="b2">He tenido más fracasos que la mayoría de la gente </label><br>
+    <input type="radio" id="c2" name="ask3" value="html"> 
+    <label for="c2">Siento que he hecho pocas cosas que valgan la pena </label><br>
+    <input type="radio" id="d2" name="ask3" value="html"> 
+    <label for="d2">No me considero fracasado</label><br>
+    <input type="radio" id="e2" name="ask3" value="html"> 
+    <label for="e2">Veo mi vida llena de fracasos</label><br>
+</form>
+
+<p>4.	Insatisfacción</p>
+<form action="/action_page.php">
+    <input type="radio" id="a3" name="ask4" value="html"> 
+    <label for="a3">Ya nada me llena</label><br>
+    <input type="radio" id="b3" name="ask4" value="html"> 
+    <label for="b3">Me encuentro insatisfecho conmigo mismo </label><br>
+    <input type="radio" id="c3" name="ask4" value="html"> 
+    <label for="c3">Ya no me divierte lo que antes me divertía </label><br>
+    <input type="radio" id="d3" name="ask4" value="html"> 
+    <label for="d3">No estoy especialmente insatisfecho</label><br>
+    <input type="radio" id="e3" name="ask4" value="html"> 
+    <label for="e3">Estoy harto de todo</label><br>
+</form>
+
+<p>5.	Sentimientos de culpa</p>
+<form action="/action_page.php">
+    <input type="radio" id="a4" name="ask5" value="html"> 
+    <label for="a4">A veces me siento despreciable y mala persona</label><br>
+    <input type="radio" id="b4" name="ask5" value="html"> 
+    <label for="b4">Me siento bastante culpable</label><br>
+    <input type="radio" id="c4" name="ask5" value="html"> 
+    <label for="c4">Me siento prácticamente todo el tiempo mala persona y despreciable</label><br>
+    <input type="radio" id="d4" name="ask5" value="html"> 
+    <label for="d4">Me siento muy infame (perverso, canalla) y despreciable</label><br>
+    <input type="radio" id="e4" name="ask5" value="html"> 
+    <label for="e4">No me siento culpable</label><br>
+</form>
+
+<p>6.	Sentimientos de castigo</p>
+<form action="/action_page.php">
+    <input type="radio" id="a5" name="ask6" value="html"> 
+    <label for="a5">Presiento que algo malo me puede suceder</label><br>
+    <input type="radio" id="b5" name="ask6" value="html"> 
+    <label for="b5">Siento que merezco ser castigado</label><br>
+    <input type="radio" id="c5" name="ask6" value="html"> 
+    <label for="c5">No pienso que esté siendo castigado</label><br>
+    <input type="radio" id="d5" name="ask6" value="html"> 
+    <label for="d5">Siento que me están castigando o me castigarán</label><br>
+    <input type="radio" id="e5" name="ask6" value="html"> 
+    <label for="e5">Quiero que me castiguen</label><br>
+</form>
+
+<p>7.	Odio a sí mismo</p>
+<form action="/action_page.php">
+    <input type="radio" id="a6" name="ask7" value="html"> 
+    <label for="a6">Estoy descontento conmigo mismo</label><br>
+    <input type="radio" id="b6" name="ask7" value="html"> 
+    <label for="b6">No me aprecio</label><br>
+    <input type="radio" id="c6" name="ask7" value="html"> 
+    <label for="c6">Me odio (me desprecio)</label><br>
+    <input type="radio" id="d6" name="ask7" value="html"> 
+    <label for="d6">Estoy asqueado de mí</label><br>
+    <input type="radio" id="e6" name="ask7" value="html"> 
+    <label for="e6">Estoy satisfecho de mí mismo</label><br>
+</form>
+
+<p>8.	Autoacusación</p>
+<form action="/action_page.php">
+    <input type="radio" id="a7" name="ask8" value="html"> 
+    <label for="a7">No creo ser peor que otros</label><br>
+    <input type="radio" id="b7" name="ask8" value="html"> 
+    <label for="b7">Me acuso a mí mismo de todo lo que va mal</label><br>
+    <input type="radio" id="c7" name="ask8" value="html"> 
+    <label for="c7">Me siento culpable de todo lo malo que ocurre</label><br>
+    <input type="radio" id="d7" name="ask8" value="html"> 
+    <label for="d7">Siento que tengo muchos y muy graves defectos</label><br>
+    <input type="radio" id="e7" name="ask8" value="html"> 
+    <label for="e7">Me critico mucho a causa de mis debilidades y errores</label><br>
+</form>
+
+<p>9.	Impulsos suicidas</p>
+<form action="/action_page.php">
+    <input type="radio" id="a8" name="ask9" value="html"> 
+    <label for="a8">Tengo pensamientos de hacerme daño, pero no llegaría a hacerlo</label><br>
+    <input type="radio" id="b8" name="ask9" value="html"> 
+    <label for="b8">Siento que estaría mejor muerto</label><br>
+    <input type="radio" id="c8" name="ask9" value="html"> 
+    <label for="c8">Siento que mi familia estaría mejor si yo muriera</label><br>
+    <input type="radio" id="d8" name="ask9" value="html"> 
+    <label for="d8">Tengo planes decididos de suicidarme</label><br>
+    <input type="radio" id="e8" name="ask9" value="html"> 
+    <label for="e8">Me mataría si pudiera</label><br>
+    <input type="radio" id="f8" name="ask9" value="html"> 
+    <label for="f8">No tengo pensamientos de hacerme daño</label><br>
+</form>
+
+<p>10.	Períodos de llanto</p>
+<form action="/action_page.php">
+    <input type="radio" id="a9" name="ask10" value="html"> 
+    <label for="a9">No lloro más de lo habitual</label><br>
+    <input type="radio" id="b9" name="ask10" value="html"> 
+    <label for="b9">Antes podía llorar; ahora no lloro ni aun queriéndolo</label><br>
+    <input type="radio" id="c9" name="ask10" value="html"> 
+    <label for="c9">Ahora lloro continuamente. No puedo evitarlo</label><br>
+    <input type="radio" id="d9" name="ask10" value="html"> 
+    <label for="d9">Ahora lloro más de lo normal</label><br>
+</form>
+
+<p>11.	Irritabilidad</p>
+<form action="/action_page.php">
+    <input type="radio" id="a10" name="ask11" value="html"> 
+    <label for="a10">No estoy más irritable que normalmente</label><br>
+    <input type="radio" id="b10" name="ask11" value="html"> 
+    <label for="b10">Me irrito con más facilidad que antes</label><br>
+    <input type="radio" id="c10" name="ask11" value="html"> 
+    <label for="c10">Me siento irritado todo el tiempo</label><br>
+    <input type="radio" id="d10" name="ask11" value="html"> 
+    <label for="d10">Ya no me irrita ni lo que antes me irritaba</label><br>
+</form>
+
+<p>12.	Aislamiento social</p>
+<form action="/action_page.php">
+    <input type="radio" id="a11" name="ask12" value="html"> 
+    <label for="a11">He perdido todo mi interés por los demás y no me importan en absoluto</label><br>
+    <input type="radio" id="b11" name="ask12" value="html"> 
+    <label for="b11">Me intereso por la gente menos que antes</label><br>
+    <input type="radio" id="c11" name="ask12" value="html"> 
+    <label for="c11">No he perdido mi interés por los demás</label><br>
+    <input type="radio" id="d11" name="ask12" value="html"> 
+    <label for="d11">He perdido casi todo mi interés por los demás y apenas tengo sentimientos hacia ellos</label><br>
+</form>
+
+<p>13.	Indecisión</p>
+<form action="/action_page.php">
+    <input type="radio" id="a12" name="ask13" value="html"> 
+    <label for="a12">Ahora estoy inseguro de mí mismo y procuro evitar tomar decisiones</label><br>
+    <input type="radio" id="b12" name="ask13" value="html"> 
+    <label for="b12">Tomo mis decisiones como siempre</label><br>
+    <input type="radio" id="c12" name="ask13" value="html"> 
+    <label for="c12">Ya no puedo tomar decisiones en absoluto</label><br>
+    <input type="radio" id="d12" name="ask13" value="html"> 
+    <label for="d12">Ya no puedo tomar decisiones sin ayuda</label><br>
+</form>
+
+<p>14.	Imagen corporal</p>
+<form action="/action_page.php">
+    <input type="radio" id="a13" name="ask14" value="html"> 
+    <label for="a13">Estoy preocupado porque me veo más viejo y desmejorado</label><br>
+    <input type="radio" id="b13" name="ask14" value="html"> 
+    <label for="b13">Me siento feo y repulsivo</label><br>
+    <input type="radio" id="c13" name="ask14" value="html"> 
+    <label for="c13">No me siento con peor aspecto que antes</label><br>
+    <input type="radio" id="d13" name="ask14" value="html"> 
+    <label for="d13">Siento que hay cambios en mi aspecto físico que me hacen parecer desagradable (o menos atractivo)</label><br>
+</form>
+
+<p>15.	Capacidad laboral</p>
+<form action="/action_page.php">
+    <input type="radio" id="a14" name="ask15" value="html"> 
+    <label for="a14">Puedo trabajar tan bien como antes</label><br>
+    <input type="radio" id="b14" name="ask15" value="html"> 
+    <label for="b14">Tengo que esforzarme mucho para hacer cualquier cosa</label><br>
+    <input type="radio" id="c14" name="ask15" value="html"> 
+    <label for="c14">No puedo trabajar en nada</label><br>
+    <input type="radio" id="d14" name="ask15" value="html"> 
+    <label for="d14">Necesito un esfuerzo extra para empezar a hacer algo</label><br>
+    <input type="radio" id="e14" name="ask15" value="html"> 
+    <label for="e14">No trabajo tan bien como lo hacía antes</label><br>
+</form>
+
+<p>16.	Trastornos del sueño</p>
+<form action="/action_page.php">
+    <input type="radio" id="a15" name="ask16" value="html"> 
+    <label for="a15">Duermo tan bien como antes</label><br>
+    <input type="radio" id="b15" name="ask16" value="html"> 
+    <label for="b15">Me despierto más cansado por la mañana</label><br>
+    <input type="radio" id="c15" name="ask16" value="html"> 
+    <label for="c15">Me despierto unas 2 horas antes de lo normal y me resulta difícil volver a dormir</label><br>
+    <input type="radio" id="d15" name="ask16" value="html"> 
+    <label for="d15">Tardo 1 o 2 horas en dormirme por la noche</label><br>
+    <input type="radio" id="e15" name="ask16" value="html"> 
+    <label for="e15">Me despierto sin motivo en mitad de la noche y tardo en volver a dormirme</label><br>
+    <input type="radio" id="f15" name="ask16" value="html"> 
+    <label for="f15">Me despierto temprano todos los días y no duermo más de 5 horas</label><br>
+    <input type="radio" id="g15" name="ask16" value="html"> 
+    <label for="g15">Tardo más de 2 horas en dormirme y no duermo más de 5 horas</label><br>
+    <input type="radio" id="h15" name="ask16" value="html"> 
+    <label for="h15">No logro dormir más de 3 o 4 horas seguidas</label><br>
+</form>
+
+<p>17.	Cansancio</p>
+<form action="/action_page.php">
+    <input type="radio" id="a16" name="ask17" value="html"> 
+    <label for="a16">Me canso más fácilmente que antes </label><br>
+    <input type="radio" id="b16" name="ask17" value="html"> 
+    <label for="b16">Cualquier cosa que hago me fatiga </label><br>
+    <input type="radio" id="c16" name="ask17" value="html"> 
+    <label for="c16">No me canso más de lo normal</label><br>
+    <input type="radio" id="d16" name="ask17" value="html"> 
+    <label for="d16">Me canso tanto que no puedo hacer nada</label><br>
+</form>
+
+<p>18.	Pérdida de apetito</p>
+<form action="/action_page.php">
+    <input type="radio" id="a17" name="ask18" value="html"> 
+    <label for="a17">He perdido totalmente el apetito</label><br>
+    <input type="radio" id="b17" name="ask18" value="html"> 
+    <label for="b17">Mi apetito no es tan bueno como antes</label><br>
+    <input type="radio" id="c17" name="ask18" value="html"> 
+    <label for="c17">Mi apetito es ahora mucho menor</label><br>
+    <input type="radio" id="d17" name="ask18" value="html"> 
+    <label for="d17">Tengo el mismo apetito de siempre</label><br>
+</form>
+
+<p>19.	Pérdida de peso</p>
+<form action="/action_page.php">
+    <input type="radio" id="a18" name="ask19" value="html"> 
+    <label for="a18">No he perdido peso últimamente</label><br>
+    <input type="radio" id="b18" name="ask19" value="html"> 
+    <label for="b18">He perdido más de 2,5 kg </label><br>
+    <input type="radio" id="c18" name="ask19" value="html"> 
+    <label for="c18">He perdido más de 5 kg </label><br>
+    <input type="radio" id="d18" name="ask19" value="html"> 
+    <label for="d18">He perdido más de 7,5 kg</label><br>
+</form>
+
+<p>20.	Hipocondría</p>
+<form action="/action_page.php">
+    <input type="radio" id="a19" name="ask20" value="html"> 
+    <label for="a19">Estoy tan preocupado por mi salud que me es difícil pensar en otras cosas</label><br>
+    <input type="radio" id="b19" name="ask20" value="html"> 
+    <label for="b19">Estoy preocupado por dolores y trastornos</label><br>
+    <input type="radio" id="c19" name="ask20" value="html"> 
+    <label for="c19">No me preocupa mi salud más de lo normal</label><br>
+    <input type="radio" id="d19" name="ask20" value="html"> 
+    <label for="d19">Estoy constantemente pendiente de lo que me sucede y de cómo me encuentro</label><br>
+</form>
+
+
+<p>21.	Libido</p>
+<form action="/action_page.php">
+    <input type="radio" id="a20" name="ask21" value="html"> 
+    <label for="a20">Estoy menos interesado por el sexo que antes</label><br>
+    <input type="radio" id="b20" name="ask21" value="html"> 
+    <label for="b20">He perdido todo mi interés por el sexo</label><br>
+    <input type="radio" id="c20" name="ask21" value="html"> 
+    <label for="c20">Apenas me siento atraído sexualmente</label><br>
+    <input type="radio" id="d20" name="ask21" value="html"> 
+    <label for="d20">No he notado ningún cambio en mi atracción por el sexo</label><br>
+</form>
+
+<p>Instrucciones: Éste es un cuestionario en el que hay grupos de afirmaciones. Por favor, lea íntegro el grupo de afirmaciones de cada apartado y escoja la afirmación de cada grupo que mejor describa el modo en que se siente hoy, es decir, actualmente. Haga una cruz en el círculo de la afirmación que haya escogido.</p>
+<p>1.</p>
+<form action="/action_page.php">
+    <input type="radio" id="a21" name="ask22" value="html"> 
+    <label for="a21">No me encuentro triste</label><br>
+    <input type="radio" id="b21" name="ask22" value="html"> 
+    <label for="b21">Me siento triste o melancólico</label><br>
+    <input type="radio" id="c21" name="ask22" value="html"> 
+    <label for="c21">Constantemente estoy melancólico o triste y no puedo superarlo </label><br>
+    <input type="radio" id="d21" name="ask22" value="html"> 
+    <label for="d21">Me siento tan triste o infeliz que no puedo resistirlo</label><br>
+</form>
+
+<p>2.</p>
+<form action="/action_page.php">
+    <input type="radio" id="a22" name="ask23" value="html"> 
+    <label for="a22">No soy particularmente pesimista y no me encuentro desalentado respecto al futuro</label><br>
+    <input type="radio" id="b22" name="ask23" value="html"> 
+    <label for="b22">Me siento desanimado respecto al futuro</label><br>
+    <input type="radio" id="c22" name="ask23" value="html"> 
+    <label for="c22">No tengo nada que esperar del futuro</label><br>
+    <input type="radio" id="d22" name="ask23" value="html"> 
+    <label for="d22">No tengo ninguna esperanza en el futuro y creo que las cosas no pueden mejorar</label><br>
+</form>
+
+<p>3.</p>
+<form action="/action_page.php">
+    <input type="radio" id="a23" name="ask24" value="html"> 
+    <label for="a23">No me siento fracasado</label><br>
+    <input type="radio" id="b23" name="ask24" value="html"> 
+    <label for="b23">Creo que he fracasado más que la mayoría de las personas</label><br>
+    <input type="radio" id="c23" name="ask24" value="html"> 
+    <label for="c23">Cuando miro hacia atrás en mi vida, todo lo que veo son un montón de fracasos</label><br>
+    <input type="radio" id="d23" name="ask24" value="html"> 
+    <label for="d23">Creo que como persona soy un completo fracasado (padre, marido, esposa)</label><br>
+</form>
+
+<p>4.</p>
+<form action="/action_page.php">
+    <input type="radio" id="a24" name="ask25" value="html"> 
+    <label for="a24">No estoy particularmente descontento</label><br>
+    <input type="radio" id="b24" name="ask25" value="html"> 
+    <label for="b24">No disfruto de las cosas como antes</label><br>
+    <input type="radio" id="c24" name="ask25" value="html"> 
+    <label for="c24">No encuentro satisfacción en nada</label><br>
+    <input type="radio" id="d24" name="ask25" value="html"> 
+    <label for="d24">Me siento descontento de todo</label><br>
+</form>
+
+<p>5.</p>
+<form action="/action_page.php">
+    <input type="radio" id="a25" name="ask26" value="html"> 
+    <label for="a25">No me siento particularmente culpable</label><br>
+    <input type="radio" id="b25" name="ask26" value="html"> 
+    <label for="b25">Me siento malo o indigno muchas veces</label><br>
+    <input type="radio" id="c25" name="ask26" value="html"> 
+    <label for="c25">Me siento culpable</label><br>
+    <input type="radio" id="d25" name="ask26" value="html"> 
+    <label for="d25">Pienso que soy muy malo e indigno</label><br>
+</form>
+
+<p>6.</p>
+<form action="/action_page.php">
+    <input type="radio" id="a26" name="ask27" value="html"> 
+    <label for="a26">No me siento decepcionado conmigo mismo</label><br>
+    <input type="radio" id="b26" name="ask27" value="html"> 
+    <label for="b26">Estoy decepcionado conmigo mismo</label><br>
+    <input type="radio" id="c26" name="ask27" value="html"> 
+    <label for="c26">Estoy disgustado conmigo mismo</label><br>
+    <input type="radio" id="d26" name="ask27" value="html"> 
+    <label for="d26">Me odio</label><br>
+</form>
+
+<p>7.</p>
+<form action="/action_page.php">
+    <input type="radio" id="a27" name="ask28" value="html"> 
+    <label for="a27">No tengo pensamientos de dañarme</label><br>
+    <input type="radio" id="b27" name="ask28" value="html"> 
+    <label for="b27">Creo que estaría mejor muerto</label><br>
+    <input type="radio" id="c27" name="ask28" value="html"> 
+    <label for="c27">Tengo planes precisos para suicidarme</label><br>
+    <input type="radio" id="d27" name="ask28" value="html"> 
+    <label for="d27">Me mataría si tuviera ocasión</label><br>
+</form>
+
+<p>8.</p>
+<form action="/action_page.php">
+    <input type="radio" id="a28" name="ask29" value="html"> 
+    <label for="a28">No he perdido el interés por los demás</label><br>
+    <input type="radio" id="b28" name="ask29" value="html"> 
+    <label for="b28">Estoy menos interesado en los demás que antes</label><br>
+    <input type="radio" id="c28" name="ask29" value="html"> 
+    <label for="c28">He perdido la mayor parte del interés por los demás y pienso poco en ellos</label><br>
+    <input type="radio" id="d28" name="ask29" value="html"> 
+    <label for="d28">He perdido todo el interés por los demás y no me importa en absoluto</label><br>
+</form>
+
+<p>9.</p>
+<form action="/action_page.php">
+    <input type="radio" id="a29" name="ask30" value="html"> 
+    <label for="a29">Tomo mis decisiones con la misma facilidad que antes</label><br>
+    <input type="radio" id="b29" name="ask30" value="html"> 
+    <label for="b29">Trato de no tener que tomar decisiones</label><br>
+    <input type="radio" id="c29" name="ask30" value="html"> 
+    <label for="c29">Tengo grandes dificultades para tomar decisiones</label><br>
+    <input type="radio" id="d29" name="ask30" value="html"> 
+    <label for="d29">Ya no puedo tomar decisiones</label><br>
+</form>
+
+<p>10.</p>
+<form action="/action_page.php">
+    <input type="radio" id="a30" name="ask31" value="html"> 
+    <label for="a30">No creo que mi aspecto haya empeorado</label><br>
+    <input type="radio" id="b30" name="ask31" value="html"> 
+    <label for="b30">Estoy preocupado porque me veo viejo y poco atractivo</label><br>
+    <input type="radio" id="c30" name="ask31" value="html"> 
+    <label for="c30">Creo que mi aspecto empeora constantemente quitándome atractivo</label><br>
+    <input type="radio" id="d30" name="ask31" value="html"> 
+    <label for="d30">Siento que mi aspecto es feo y repulsivo</label><br>
+</form>
+
+<p>11.</p>
+<form action="/action_page.php">
+    <input type="radio" id="a31" name="ask32" value="html"> 
+    <label for="a31">Puedo trabajar igual de bien que antes</label><br>
+    <input type="radio" id="b31" name="ask32" value="html"> 
+    <label for="b31">Me cuesta un esfuerzo especial comenzar a hacer algo</label><br>
+    <input type="radio" id="c31" name="ask32" value="html"> 
+    <label for="c31">Debo esforzarme mucho para hacer cualquier cosa</label><br>
+    <input type="radio" id="d31" name="ask32" value="html"> 
+    <label for="d31">No puedo realizar ningún trabajo</label><br>
+</form>
+
+<p>12.</p>
+<form action="/action_page.php">
+    <input type="radio" id="a32" name="ask33" value="html"> 
+    <label for="a32">No me canso más que antes</label><br>
+    <input type="radio" id="b32" name="ask33" value="html"> 
+    <label for="b32">Me canso más fácilmente que antes</label><br>
+    <input type="radio" id="c32" name="ask33" value="html"> 
+    <label for="c32">Me canso por cualquier cosa</label><br>
+    <input type="radio" id="d32" name="ask33" value="html"> 
+    <label for="d32">Me canso demasiado por hacer cualquier cosa</label><br>
+</form>
+
+<p>13.</p>
+<form action="/action_page.php">
+    <input type="radio" id="a33" name="ask34" value="html"> 
+    <label for="a33">Mi apetito no es peor de lo normal</label><br>
+    <input type="radio" id="b33" name="ask34" value="html"> 
+    <label for="b33">Mi apetito no es tan bueno como antes</label><br>
+    <input type="radio" id="c33" name="ask34" value="html"> 
+    <label for="c33">Mi apetito es ahora mucho peor</label><br>
+    <input type="radio" id="d33" name="ask34" value="html"> 
+    <label for="d33">He perdido el apetito</label><br>
+</form>
+
+                         <button class="btn" >
+                            <img src="/save.svg" alt="menu icon" style="width:20%;height: 100%;margin-left:-10%">
+                               Guardar
+                            </button>
+
+                </div>
+
+              
+          
+          
+        </div>
+    </div>
