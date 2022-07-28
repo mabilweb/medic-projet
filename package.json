@@ -4,8 +4,7 @@
   "description": "descripción de consulta en pacientes",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src"
+    "start":"node index.js"
   },
   "keywords": [],
   "author": "",
