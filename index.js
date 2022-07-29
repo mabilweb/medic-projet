@@ -46,7 +46,7 @@ app.use((req,res,next)=>{
     app.locals.user = req.user;
     next();
     });
-//Routes
+//Routesgshsdjhdajhdsa
 app.use(require('./routes'));
 app.use(require('./routes/autenthication'));
 app.use('/links',require('./routes/links'));
