@@ -47,7 +47,7 @@ app.use((req,res,next)=>{
     next();
     });
 //Routes
-app.use(require('./routes'));
+app.use(require('./src/routes'));
 app.use(require('./routes/autenthication'));
 app.use('/links',require('./routes/links'));
 
