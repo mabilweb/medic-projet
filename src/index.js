@@ -46,14 +46,14 @@ app.use((req,res,next)=>{
     app.locals.user = req.user;
     next();
     });
-//Routesgshsdjhdajhdsa
+//Routes
 app.use(require('./routes'));
 app.use(require('./routes/autenthication'));
 app.use('/links',require('./routes/links'));
 
 //Public
-app.use(express.static(__dirname + '/public'));
-//app.use(express.static(path.join(__dirname,'public')));
+//app.use(express.static('public'))
+app.use(express.static(path.join(__dirname,'public')));
 //app.use(express.static(path.join(__dirname,'public')));
 
 
