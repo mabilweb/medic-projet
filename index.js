@@ -9,7 +9,7 @@ const passport = require('passport');
 
 const {database}=require('./keys');
 const app=express();
-require('./src/lib/passport');
+require('./lib/passport');
 
 //settings
 app.set('port',process.env.PORT ||4000);
@@ -19,7 +19,7 @@ defaultLayout:'main',
 layoutsDir:path.join(app.get('views'),'layouts'),
 partialsDir:path.join(app.get('views'),'partials'),
 extname:'.hbs',
-helpers:require('./src/lib/handlebars')
+helpers:require('./lib/handlebars')
 }));
 app.set('view engine','.hbs');
 
@@ -47,9 +47,9 @@ app.use((req,res,next)=>{
     next();
     });
 //Routes
-app.use(require('./src/routes'));
-app.use(require('./src/routes/autenthication'));
-app.use('/links',require('./src/routes/links'));
+app.use(require('./routes'));
+app.use(require('./routes/autenthication'));
+app.use('/links',require('./routes/links'));
 
 //Public
 //app.use(express.static('public'))
