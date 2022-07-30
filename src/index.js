@@ -2,15 +2,15 @@ const express =require('express');
 const morgan =require('morgan');
 const exphbs=require('express-handlebars');
 const path =require('path');
-/*const flash=require('connect-flash');
+const flash=require('connect-flash');
 const session =require('express-session');
 const MySQLStore=require('express-mysql-session');
-const passport = require('passport');*/
+const passport = require('passport');
 
 //const {database}=require('./keys');
 
 const app=express();
-//require('./lib/passport');
+require('./lib/passport');
 //settings
 app.set('port',process.env.PORT ||4000);
 app.set('views',path.join(__dirname,'views'));
@@ -48,8 +48,8 @@ app.use((req,res,next)=>{
     });
 //Routes
 app.use(require('./routes/index'));
-//app.use(require('./routes/autenthication'));
-//app.use('/links',require('./routes/links'));
+app.use(require('./routes/autenthication'));
+app.use('/links',require('./routes/links'));
 
 //Public
 //app.use(express.static('public'))
