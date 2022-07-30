@@ -16,30 +16,30 @@ const app=express();
 //settings
 app.set('port',process.env.PORT ||4000);
 app.set('views',path.join(__dirname,'views'));
-app.engine('.hbs',exphbs({
-defaultLayout:'main',
-layoutsDir:path.join(app.get('views'),'layouts'),
-partialsDir:path.join(app.get('views'),'partials'),
-extname:'.hbs',
-helpers:require('./lib/handlebars')
-}));
+//app.engine('.hbs',exphbs({
+//defaultLayout:'main',
+//layoutsDir:path.join(app.get('views'),'layouts'),
+//partialsDir:path.join(app.get('views'),'partials'),
+//extname:'.hbs',
+//helpers:require('./lib/handlebars')
+//}));
 app.set('view engine','.hbs');
 
 //middlewares
 
 //global varials
-app.use(morgan('dev'));
-app.use(express.urlencoded({extended:false}));
-app.use(express.json());
-app.use(session({
-    secret:'faztmysqlnodesession',
-    resave:false,
-    saveUninitialized:false,
-    store: new MySQLStore(database)
-}));
-app.use(flash());
-app.use(passport.initialize());
-app.use(passport.session());
+//app.use(morgan('dev'));
+//app.use(express.urlencoded({extended:false}));
+//app.use(express.json());
+//app.use(session({
+//    secret:'faztmysqlnodesession',
+//    resave:false,
+//    saveUninitialized:false,
+//    store: new MySQLStore(database)
+//}));
+//app.use(flash());
+//app.use(passport.initialize());
+//app.use(passport.session());
 
 
 /*app.use((req,res,next)=>{
@@ -50,8 +50,8 @@ app.use(passport.session());
     });*/
 //Routes
 app.use(require('./routes/index'));
-app.use(require('./routes/autenthication'));
-app.use('/links',require('./routes/links'));
+//app.use(require('./routes/autenthication'));
+//app.use('/links',require('./routes/links'));
 
 //Public
 //app.use(express.static('public'))
