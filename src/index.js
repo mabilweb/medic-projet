@@ -9,9 +9,9 @@ const passport = require('passport');
 
 const app=express();
 
-const {database}=require('./keys');
+//const {database}=require('./keys');
 
-require('./lib/passport');
+//require('./lib/passport');
 
 //settings
 app.set('port',process.env.PORT ||4000);
