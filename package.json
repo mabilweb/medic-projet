@@ -6,15 +6,12 @@
   "scripts": {
     "start": "node src"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/mabilweb/medic-projet.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mabilweb/medic-projet/issues"
-  },
-  "homepage": "https://github.com/mabilweb/medic-projet#readme"
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "morgan": "^1.10.0"
+  }
 }

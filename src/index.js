@@ -5,7 +5,6 @@ const path =require('path');
 
 const app=express();
 
-
 //settings
 app.set('port',process.env.PORT ||4000);
 app.set('views',path.join(__dirname,'views'));
@@ -23,7 +22,6 @@ app.set('view engine','.hbs');
 //global varials
 app.use(morgan('dev'));
 
-
 //Routes
 app.use(require('./routes'));
 
@@ -31,7 +29,6 @@ app.use(require('./routes'));
 //app.use(express.static('public'))
 app.use(express.static(path.join(__dirname,'public')));
 //app.use(express.static(path.join(__dirname,'public')));
-
 
 //statir server
 app.listen(app.get('port'),()=>{
