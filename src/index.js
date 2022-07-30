@@ -1,7 +1,7 @@
 const express = require('express');
 const app =express();
 const path =require('path');
-const exphbs=require('express-handlebars');
+//const exphbs=require('express-handlebars');
 
 //settings
 app.set('port',process.env.PORT || 4000);
@@ -17,7 +17,7 @@ app.set('views',path.join(__dirname,'views'));
 //extname:'.hbs',
 //helpers:require('./lib/handlebars')
 //}));
-app.set('view engine','.hbs');
+//app.set('view engine','.hbs');
 //middleawres
 
 
