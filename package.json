@@ -1,17 +1,21 @@
 {
-  "name": "medic-projet",
+  "name": "pruebaxxx",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node src"
+    "start": "node src",
+    "dev": "node src" 
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^3.1.8",
     "express": "^4.18.1",
-    "express-handlebars": "^6.0.6",
     "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
   }
 }
