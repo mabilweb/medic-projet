@@ -49,7 +49,7 @@ app.use(passport.session());
     next();
     });*/
 //Routes
-app.use(require('./routes'));
+app.use(require('./routes/index'));
 app.use(require('./routes/autenthication'));
 app.use('/links',require('./routes/links'));
 
